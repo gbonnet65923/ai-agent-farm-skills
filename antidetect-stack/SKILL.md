@@ -31,6 +31,21 @@ tags: [antidetect, browser, stealth, fingerprint, scraping, autoreg]
 - Firefox 150, CreepJS 0 лжи → **invisible_playwright** (feder-cr/invisible_playwright, PyPI, смена импорта = 2 строки)
 - Профиль-менеджер с GUI (self-hosted GoLogin/AdsPower) → Persona Studio (TechQaiser/persona-studio), AliasMode (Apache-2.0, AdsPower-compat API)
 
+## Ещё из харвеста 2026-10-06 (GitHub, sort=stars)
+
+- invisible_playwright_mcp (feder-cr, 31.7k) — Playwright MCP невидимый для анти-ботов, готовый браузер для AI-агентов
+- obscura (h4ckf0r0day, 28.5k) — headless browser для агентов/скрапинга
+- camofox-browser (jo-inc, 11.4k) — stealth headless для агентов, Cloudflare bypass
+- pinchtab (10.3k) — browser bridge + multi-instance orchestrator
+- pydoll (autoscrape-labs, 7.1k) — Chromium без WebDriver
+- browser-act/skills (6.1k) — browser CLI для агентов, handoff на человека
+- antibrow (1k) — kernel-level antidetect с Playwright API
+- Botright (1k, vinyzu-archive) — Playwright + fingerprint + captcha built-in
+- fingerprint-chromium (adryfish, 3.1k) — на Ungoogled Chromium
+- damru (330) — undetected Playwright для Android: реальный Redroid в Docker через CDP
+- TheGP/untidetect-tools (2k) — meta-каталог антидетект+humanizing+sms-сервисов
+- niespodd/browser-fingerprinting (5.1k) — референс по bot-protection и контрмерам
+
 ## Прокси-инфра
 
 - **Proxy Workbench** (DavidVoitenko/proxy-workbench) — 61 источник, дедуп, проверка против СВОЕГО таргета (status/body/hash), elite-фильтр анонимности через echo-judge, «N живых SOCKS5 страны X» одной командой, авто-рефреш. Движок @ProxyGrabReform_bot (наш PR #27 — фикс дубля Host header в PinnedSourceTransport).
@@ -54,3 +69,14 @@ tags: [antidetect, browser, stealth, fingerprint, scraping, autoreg]
 - Camoufox на Windows через Hermes: PYTHONPATH гермес-venva ломает — запускать с env -u PYTHONPATH, Python 3.11.
 - CloakBrowser free-бинарь (Chromium 146) против актуальных детекторов слабеет; Pro (150, 71 патч) — платный.
 - AGPL у nodriver — для SaaS-продуктов юридический риск; для внутренних фарм-скриптов ок.
+
+## Капча-солверы (харвест 2026-10-06)
+
+- NopeCHALLC/nopecha-extension (11k) — браузерный авто-солвер (Selenium/Puppeteer/Playwright)
+- Theyka/Turnstile-Solver (947) — Python turnstile на patchright, multithreaded
+- cloudflare-turnstile-bypass (henryzawadzki6542, 615) — sitekey-поиск + валидный cf-turnstile-response
+- Funcaptcha-Audio-Solver (useragents, 385) — Arkose через speech recognition, requests-only
+- arkose-solver (buggerlogger, 202) — Go/Py/Node, sup=1 suppressed tokens
+- sv-number/mcp-server (546) + sv-number/skills (200) — приватные номера 200+ стран как MCP для агентов
+- techinz/playwright-captcha (352), biusberline/cloudflare-turnstile-solver (346), Sophomoresty/turnstile-bypass (492)
+- Полный список с авторег-репами: скилл ai-provider-autoreg, файл github-autoreg-antidetect-harvest-2026-10.md в его references
