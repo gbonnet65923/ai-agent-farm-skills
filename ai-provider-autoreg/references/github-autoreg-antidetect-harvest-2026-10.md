@@ -76,9 +76,40 @@
 - Swe-HimelRana/TempMail — self-hosted temp-mail поверх СВОЕГО IMAP
 - wuzzstoreservice/TempMail — self-hosted TempMail API (Cloudflare-compatible)
 
+## ВИТОК 2: гейтвеи-акцепторы и платформенные реги (06.10)
+
+### Субскрипшен→API гейтвеи (куда сливать нафармленные акки)
+- Wei-Shaw/sub2api — 43346★, one-stop中转: Claude/OpenAI/Gemini/Grok подписки в единый API, 拼车-шаринг
+- chenyme/grok2api — 7775★, multi-account gateway Grok Build/Web/Console (апстрим нашего grok2api)
+- basketikun/chatgpt2api — 6536★, чистый протокол ChatGPT: GPT-Image-2,号池, импорт CPA
+- qixing-jk/all-api-hub — 4912★, хаб акков New-API/Sub2API: баланс/usage, auto check-in, one-click keys
+- cita-777/metapi — 3303★, агрегатор New API/One API/OneHub/Veloera/AnyRouter/Sub2API в один ключ
+- jiujiu532/grok2api — 1873★
+- wenfxl/openai-cpa — 1404★, distributed automation для массовых прогонов
+- yukkcat/chatgpt2api — 860★, регистратор держит号池 квоты
+- FakeOAI/tokens — 433★, Tokens-платформа:号池 → OpenAI/Anthropic/Gemini API, Claude Code/Codex
+- zqbxdev/webchat2api — 390★, OpenAI-compat proxy GPT/Grok/Gemini + Docker
+- CloudWaddie/LMArenaBridge — 406★, LMArena → OpenAI-compat endpoint
+
+### Платформенные реги
+- lbjlaq/Antigravity-Manager — 31974★, акк-менеджер/свитчер Antigravity
+- LainsNL/OutlookRegister — 1278★, Outlook-регистратор
+- daimon3332/OutlookRegister — 1254★, batch Outlook/Hotmail
+- lxf746/outlook-auto-register — 929★, ЧИСТЫЙ ПРОТОКОЛ Fluent Web API, без браузера (тот самый из GoubaLab-дампа)
+- Pluviobyte/Kiro-auto-register — 323★, Kiro + email OTP
+- HSJ-BanFan/grok-register-web — 186★, Grok web-платформа: Outlook-алиасы batch + SSO → grok2api авто-импорт
+- keggin-CHN/kiro-auto-register — 146★, refresh_token-граббер
+- V-IOLE-T/hotmail-register-extension — 327★, Chrome-расширение: OpenAI OAuth «古法» рега + тегging акков
+- Ethan-W20/openai-auto-register — 240★, Codex auto-register + token fetcher
+- akihitohyh/windsurf-auto-register — 59★
+- kggzs/TraeAccountRegister — 50★, Trae batch
+- griffinmartin/opencode-claude-auth — 1299★, OpenCode плагин поверх существующих Claude Code кредов
+
 ## Pitfalls
 
 - Китайские рега-репы (turb-gpt, codex_auto_register) часто требуют свои платные 接码/提链 сервисы — проверять .env.example на обязательные внешние API перед запуском.
 - any-auto-register уже форкнут локально (Desktop/any-auto-register) — не клонировать заново, сверяться с апстримом периодически (репа активно обновляется).
 - go-cursor-help — не рега, а сброс триала существующего акка; комбинируется с авторегом.
 - Перед клонированием любой репы из этого списка — github-repo-vetting skill (malware-скан, лицензия, живость коммитов).
+- lbjlaq/Antigravity-Manager (32k★) и jlcodes99/cockpit-tools (18.7k★) — закрытые бинарники/Electron, аудитить перед запуском (в GoubaLab-дампе cockpit-tools был помечен; бинарь Cockpit Tools пропал с E:\Games).
+- chatgpt2api (basketikun) уже есть в нашем стеке как апстрим — брать фичи号池/GPT-Image-2, не форкать заново.
